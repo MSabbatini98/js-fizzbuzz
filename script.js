@@ -13,11 +13,11 @@ for (var i = 0; i != max_num; i++) {
     counter += 1;
     console.log(counter);
     if ((counter % 3) == 0 && (counter % 5)!= 0 ){
-        document.getElementById("outcome").innerHTML += "Fizz" + "<br>";
+        document.getElementById("outcome").innerHTML += "<span id ='fizz'> Fizz </span> <br>";
     } else if ((counter % 3) != 0 && (counter % 5)== 0 ) {
-        document.getElementById("outcome").innerHTML += "Buzz" + "<br>";
+        document.getElementById("outcome").innerHTML += "<span id ='buzz'> Buzz </span> <br>";
     } else if ((counter % 3) == 0 && (counter % 5)== 0 ) {
-        document.getElementById("outcome").innerHTML +=  "FizzBuzz" + "<br>";
+        document.getElementById("outcome").innerHTML += "<span id ='fizzbuzz'> FizzBuzz </span> <br>";
     } else {
         document.getElementById("outcome").innerHTML +=  counter + "<br>";
     }

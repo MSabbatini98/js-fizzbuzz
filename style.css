@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+}
+
+h1 {
+    font-variant: small-caps;
+    margin: 20px;
+}
+
+#fizz {
+    position: relative;
+    color: yellow;
+}
+#fizz::before {
+    content: "\f061";
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: -30px;
+    color: inherit;
+}
+
+#buzz {
+    position: relative;
+    color: blue;
+}
+#buzz::after {
+    content: "\f060";
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 60px;
+    color: inherit;
+}
+#fizzbuzz{
+    position: relative;
+    color: greenyellow;
+}
+#fizzbuzz::after {
+    content: "\f060";
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 90px;
+    color: inherit;
+}
+#fizzbuzz::before {
+    content: "\f061";
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: -50px;
+    color: inherit;
+}
