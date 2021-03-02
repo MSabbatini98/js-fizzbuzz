@@ -24,6 +24,7 @@ h1 {
 }
 #fizz::before {
     content: "\f061";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: -1px;
     bottom: 0;
@@ -37,6 +38,7 @@ h1 {
 }
 #buzz::after {
     content: "\f060";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: -1px;
     bottom: 0;
@@ -48,18 +50,63 @@ h1 {
     color: greenyellow;
 }
 #fizzbuzz::after {
+    font-family: "Font Awesome 5 Free";
     content: "\f060";
     position: absolute;
     top: -1px;
     bottom: 0;
-    left: 90px;
+    left: 100px;
     color: inherit;
 }
 #fizzbuzz::before {
     content: "\f061";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: -1px;
     bottom: 0;
     left: -50px;
     color: inherit;
+}
+.legenda {
+    position: fixed;
+    font-size: 23px;
+    top: calc(50vh - 200px);
+    left: 0;
+    margin: 45px;
+    padding: 46px 23px;
+    border: white solid 5px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.legenda ul {
+    list-style: none;
+    line-height: 50px;
+}
+#fizz_legenda {
+    color: yellow;
+}
+#buzz_legenda {
+    color: blue;
+}
+#buzzfizz_legenda{
+    color: greenyellow;
+}
+@media screen and (max-width: 1100px) {
+    /* body {
+        background-color: purple;
+    } */
+    .legenda {
+        transform: scale(0.5);
+        top: 0px;
+        margin: 0;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 500px) {
+    /* body {
+        background-color: pink;
+    } */
+    .legenda {
+        display: none;
+    }
 }
